@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Company Name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Enterprise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Pricing</a>
+              </li>
+             
+              <button type="button" class="btn btn-outline-primary" >Sign Up</button>
+
+            </ul>
+          </div>
+       
+      </nav>
+   
+   
+
+ 
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fill in the Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+        <table>
+          <form>
+          <tr>
+            
+               <td><label for="name">Name</label></td>
+               <td><input type="text" id="name" placeholder="Name" required /></td>
+               </tr>
+          <tr> <td><label for="email">Email</label> </td>
+                <td><input type="email" id="email" placeholder="Email" required /></td>
+         
+         </tr>
+           <tr>
+            <td>
+           <label for="order-comments">Order Comments:</label></td>
+           <td><textarea id="order-comments" name="orderComments" rows="2" required></textarea></td>
+        </tr>
+        <tr>
+            <div  class="modal-footer">
+               <td> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></td>
+            <td><button type="submit" class="btn btn-primary" >Submit</button></td>
+              </div>
+        </tr>
+          </form>
+        </table>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h2>Pricing</h2>
+    <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+    <div class="cards-container" id="cardContainer">
+
+    <div class="card" id="card1"style="width: 15rem;">
+       
+          <div class="card-heading">
+            <p class="highlight">Free</p>
+          </div>
+          <div class="card-description">
+            <h6 class="card-subtitle mb-2 text-body-secondary">$0/mo</h6>
+            <p class="card-text">10 users included  </p>
+            <p class="card-text">2 GB of storage </p>
+            <p class="card-text"> Email support </p>
+            <p class="card-text">Help center access </p>
+          </div>
+           
+          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">Sign up Free</button>
+        </div>
+        <div class="card" id="card2"style="width: 15rem;">
+       
+          <div class="card-heading">
+            <p class="highlight">Pro</p>
+          </div>
+          <div class="card-description">
+            <h6 class="card-subtitle mb-2 text-body-secondary">$15/mo</h6>
+            <p class="card-text"> 20 users included  </p>
+            <p class="card-text">10 GB of storage </p>
+            <p class="card-text">   Priority email support </p>
+            <p class="card-text">Help center access </p>
+          </div>
+        
+          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get Started</button>
+        </div>
+        <div class="card" id="card3"style="width: 15rem;">
+       
+          <div class="card-heading">
+            <p class="highlight">Enterprise</p>
+          </div>
+          <div class="card-description">
+            <h6 class="card-subtitle mb-2 text-body-secondary">$29/mo</h6>
+            <p class="card-text">30 users included  </p>
+            <p class="card-text">15 GB of storage </p>
+            <p class="card-text"> Phone and email support</p>
+            <p class="card-text">Help center access </p>
+          </div>
+         
+          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign up Free</button>
+        </div>
+
+      
+
+</div>  
+<div class="footer-section">
+  <div class="footer-first">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="image" class="bootstrap-image"/>
+    <p>© 2017-2018</p>
+  </div>
+  <div class="footer-second">
+    <!-- <h5>Features</h5> -->
+    <ul type="none">
+      <li><h5>Features</h5></li>
+      <li>Cool stuff</li>
+      <li>Random feature</li>
+      <li>Team feature</li>
+      <li>Stuff for developers</li>
+      <li>Another one</li>
+      <li>Last time</li>
+    </ul>
+    
+  </div>
+  <div class="footer-third">
+    <!-- <h5>Resources</h5> -->
+    <ul type="none">
+      <li><h5>Resources</h5></li>
+      <li>Resource</li>
+      <li>Resource name</li>
+      <li>Another resource</li>
+      <li>Final resource</li>
+      
+    </ul>
+  </div>
+  <div class="footer-fourth">
+   
+    <ul type="none">
+      <li><h5>About</h5></li>
+      <li>Team</li>
+      <li>Loaction</li>
+      <li>Privacy</li>
+      <li>Terms</li>
+     
+    </ul>
+  
+  </div>
+
+</div>
+
+
+<script src="./script.js"></script>
+  
+</body>
+</html>
